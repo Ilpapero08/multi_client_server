@@ -34,10 +34,10 @@ public class SocketHandler implements Runnable{
                 Double risultato = 0.0;
                 do {
                     try {
-                        operatore = in.readLine();
-                        
                         numero1 = Double.parseDouble(in.readLine());
                         numero2 = Double.parseDouble(in.readLine());
+
+                        operatore = in.readLine();
                         
                         if (operatore.equals("+") || operatore.equals("-") || operatore.equals("*") || operatore.equals("/")) {
                             datiValidi = true; 
